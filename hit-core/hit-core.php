@@ -8,7 +8,7 @@
  * Author: Heinsen-IT
  * Author URI: https://heinsen-it.de
  * License: GPL2
- * Letztes Update: 2025-04-16 20:00:00
+ * Letztes Update: 2025-07-08 20:00:00
  * MINIMAL WP: 6.4.0
  * MINIMAL PHP: 8.2.0
  * Tested WP: 6.7.1
@@ -37,7 +37,6 @@ spl_autoload_register(function ($class) {
 
     // Pfad zur Datei erstellen
     $file = plugin_dir_path(__FILE__) .  strtolower($class) . '.php';
-
     // Datei laden, wenn sie existiert
     if (file_exists($file)) {
         require_once $file;
